@@ -14,7 +14,6 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
-    "gh-pages": "^3.2.0",
     "googleapis": "^71.0.0",
     "if-env": "^1.0.4",
     "moment": "^2.29.1",
