@@ -99,6 +99,12 @@ app.get("/active/:city", (req, res) => {
 });
 
 // end active search section
+app.use(session(sess));
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(routes);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -107,15 +113,9 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.use(session(sess));
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(
-  express.static(path.join(__dirname, "./healthyhabits/public/index.html"))
-);
-
-app.use(routes);
+// app.use(
+//   express.static(path.join(__dirname, "./healthyhabits/public/index.html"))
+// );
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`listening on ${PORT}`));
