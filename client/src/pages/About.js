@@ -22,7 +22,7 @@ function About() {
             <Card className="aboutCard" style={{ marginBottom: "10px" }}>
               <Card.Img
                 variant="top"
-                src="/images/Wolverine.png"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Wolverine.png?raw=true"
                 style={{
                   height: "275px",
                   width: "275px",
@@ -67,7 +67,7 @@ function About() {
             <Card className="aboutCard" style={{ marginBottom: "10px" }}>
               <Card.Img
                 variant="top"
-                src="/images/NightCrawler.png"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/NightCrawler.png?raw=true"
                 style={{
                   height: "275px",
                   width: "275px",
@@ -109,7 +109,7 @@ function About() {
             <Card className="aboutCard" style={{ marginBottom: "10px" }}>
               <Card.Img
                 variant="top"
-                src="/images/Cyclops.png"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Cyclops.png?raw=true"
                 style={{
                   height: "275px",
                   width: "275px",
@@ -151,7 +151,7 @@ function About() {
             <Card className="aboutCard" style={{ marginBottom: "10px" }}>
               <Card.Img
                 variant="top"
-                src="/images/Xman.png"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Xman.png?raw=true"
                 style={{
                   height: "275px",
                   width: "275px",
@@ -194,7 +194,7 @@ function About() {
             <Card className="aboutCard" style={{ marginBottom: "10px" }}>
               <Card.Img
                 variant="top"
-                src="/images/Gambit.png"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Gambit.png?raw=true"
                 style={{
                   height: "275px",
                   width: "275px",

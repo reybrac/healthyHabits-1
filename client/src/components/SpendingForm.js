@@ -3,6 +3,7 @@ import { useAuthState } from "../utils/state";
 import axios from "axios";
 import moment from "moment";
 import { useHistory } from "react-router-dom";
+import "./style.css";
 
 function SpendingForm() {
   let history = useHistory();

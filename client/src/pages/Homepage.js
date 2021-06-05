@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Media from "react-bootstrap/Media";
-
+import "../components/style.css";
 
 function Homepage() {
   return (
@@ -25,14 +25,14 @@ function Homepage() {
           <img
             width={64}
             height={64}
-            src="/images/EatingSymbol.png"
+            src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/EatingSymbol.png?raw=true"
             alt="Generic placeholder"
             style={{ padding: "10px" }}
           />
           <img
             width={64}
             height={64}
-            src="/images/SpendingSymbol.png"
+            src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/SpendingSymbol.png?raw=true"
             alt="Generic placeholder"
             style={{ padding: "10px" }}
           />
@@ -40,7 +40,7 @@ function Homepage() {
             width={64}
             height={64}
             id="image3"
-            src="/images/SleepingSymbol.png"
+            src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/SleepingSymbol.png?raw=true"
             alt="Person sleeping in bed"
             style={{ padding: "10px" }}
           />
@@ -48,7 +48,7 @@ function Homepage() {
             width={64}
             height={64}
             id="image4"
-            src="/images/GraphSymbol.png"
+            src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/GraphSymbol.png?raw=true"
             alt="Bar and line graphs"
             style={{ padding: "10px" }}
           />
@@ -59,7 +59,7 @@ function Homepage() {
           <Row className="row">
             <Col md={12}>
               {/* <Media.Body> */}
-              <p style={{textAlign: "center" }}>
+              <p style={{ textAlign: "center" }}>
                 "You'll never change your life until you change something you do
                 Daily. The secret of your success is found in your daily
                 routine." -John C. Maxwell
@@ -73,7 +73,7 @@ function Homepage() {
           // className="container-flex"
           style={{
             backgroundImage:
-              "url(/images/VectorBG.jpeg)",
+              "url(https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/VectorBG.jpeg?raw=true)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
@@ -89,7 +89,7 @@ function Homepage() {
           >
             <Col md={4}>
               <img
-                src="/images/Plate.jpg"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Plate.jpg?raw=true"
                 alt="image1"
                 className="img-thumbnail"
                 style={{
@@ -192,7 +192,7 @@ function Homepage() {
             <Col ml={4}>
               <img
                 id="image2"
-                src="/images/CoffeePrice.jpg"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/CoffeePrice.jpg?raw=true"
                 alt="Stack of cash"
                 className="img-thumbnail"
                 style={{
@@ -216,7 +216,7 @@ function Homepage() {
           >
             <Col md={4}>
               <img
-                src="/images/Clock.jpg"
+                src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Clock.jpg?raw=true"
                 alt="image1"
                 className="img-thumbnail"
                 style={{
@@ -286,13 +286,13 @@ function Homepage() {
 
         <img
           className="ml-3"
-          src="/images/FoodCalories.png"
+          src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/FoodCalories.png?raw=true"
           alt="junk food"
           style={{ height: "200px", widht: "200px" }}
         />
         <img
           className="ml-3"
-          src="/images/GRAPH1.jpg"
+          src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Graph1.JPG?raw=true"
           alt="Eating graph"
           style={{ height: "200px", widht: "200px" }}
         />
