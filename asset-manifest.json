@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/reybrac/healthyHabits-1/static/css/main.318771d0.chunk.css",
+    "main.js": "/reybrac/healthyHabits-1/static/js/main.843d7e9c.chunk.js",
+    "main.js.map": "/reybrac/healthyHabits-1/static/js/main.843d7e9c.chunk.js.map",
+    "runtime-main.js": "/reybrac/healthyHabits-1/static/js/runtime-main.31353a2d.js",
+    "runtime-main.js.map": "/reybrac/healthyHabits-1/static/js/runtime-main.31353a2d.js.map",
+    "static/js/2.0d366c4a.chunk.js": "/reybrac/healthyHabits-1/static/js/2.0d366c4a.chunk.js",
+    "static/js/2.0d366c4a.chunk.js.map": "/reybrac/healthyHabits-1/static/js/2.0d366c4a.chunk.js.map",
+    "index.html": "/reybrac/healthyHabits-1/index.html",
+    "static/css/main.318771d0.chunk.css.map": "/reybrac/healthyHabits-1/static/css/main.318771d0.chunk.css.map",
+    "static/js/2.0d366c4a.chunk.js.LICENSE.txt": "/reybrac/healthyHabits-1/static/js/2.0d366c4a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.31353a2d.js",
+    "static/js/2.0d366c4a.chunk.js",
+    "static/css/main.318771d0.chunk.css",
+    "static/js/main.843d7e9c.chunk.js"
+  ]
+}
