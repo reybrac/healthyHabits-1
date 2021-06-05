@@ -37,13 +37,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dorrianweber/healthyHabits"
+    "url": "git+https://github.com/reybrac/healthyHabits-1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dorrianweber/healthyHabits/issues"
+    "url": "https://github.com/reybrac/healthyHabits-1/issues"
   },
-  "homepage": "https://github.com/dorrianweber/healthyHabits#readme"
+  "homepage": "https://github.com/reybrac/healthyHabits-1#readme"
 }
