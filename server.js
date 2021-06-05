@@ -100,6 +100,10 @@ app.get("/active/:city", (req, res) => {
 
 // end active search section
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 app.use(session(sess));
 
 app.use(express.json());
