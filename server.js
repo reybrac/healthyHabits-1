@@ -9,10 +9,8 @@ const cron = require("node-cron");
 const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 const router = require("express").Router();
-
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -77,7 +75,7 @@ function weeklyMail() {
 }
 
 //Active API key
-const A_key = process.env.Active_API_Key;
+const A_key = process.env.Active_API_key;
 
 //Active search section
 app.get("/active/:city", (req, res) => {
@@ -99,23 +97,23 @@ app.get("/active/:city", (req, res) => {
 });
 
 // end active search section
+
 app.use(session(sess));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(routes);
-
+// Serve up static assets for deployment
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
+  // The "catchall" handler:  for any request that doesn't
+  // match one above, send back React's index.html file
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 
-// app.use(
-//   express.static(path.join(__dirname, "./healthyhabits/public/index.html"))
-// );
+app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`listening on ${PORT}`));
