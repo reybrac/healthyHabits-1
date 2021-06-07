@@ -75,7 +75,7 @@ function weeklyMail() {
 }
 
 //Active API key
-const A_key = process.env.Active_API_key;
+const A_key = process.env.Active_API_Key;
 
 //Active search section
 app.get("/active/:city", (req, res) => {
