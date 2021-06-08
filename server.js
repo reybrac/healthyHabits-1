@@ -97,12 +97,12 @@ app.get("/active/:city", (req, res) => {
 });
 
 // end active search section
-app.use(routes);
+
 app.use(session(sess));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(routes);
 // Serve up static assets for deployment
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
