@@ -75,16 +75,25 @@ function weeklyMail() {
 }
 
 //Active API key
-const A_key = process.env.Active_API_Key;
+const A_Key = process.env.Active_API_Key;
 
 //Active search section
-app.get("/active/:city", (req, res) => {
+app.get("/active/:search", (req, res) => {
   console.log("hit active");
-  console.log(req.params);
+
+  let search = req.params.search;
+
+  var sortedSearch = search.split(",");
+  const info = {
+    city: sortedSearch[0],
+    state: sortedSearch[1].trim(),
+  };
+
+  console.log(info.city + info.state);
 
   axios
     .get(
-      `https://api.amp.active.com/v2/search/?city=${req.params.city}&state=ca&radius=50*current_page=1&per_page=50&sort=distance&registerable_only=true&query=running&exclude_children=false&api_key=${A_key}`
+      `https://api.amp.active.com/v2/search/?city=${info.city}&state=${info.state}&radius=50*current_page=1&per_page=50&sort=distance&registerable_only=true&query=running&exclude_children=false&api_key=${A_Key}`
     )
     .then((body) => {
       // console.log(body.data);
