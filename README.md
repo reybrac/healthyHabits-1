@@ -57,10 +57,10 @@ Screenshots of working website:
 ## Installation & Deployment
 
 Copy the link and paste it to your browser to install and deploy it.
-https://
+https://healthy-habits-1.herokuapp.com/profile
 
 Github repository:
-https://github.com/dorrianweber/healthyHabits
+https://github.com/reybrac/healthyHabits-1
 
 ## Future Scope
 

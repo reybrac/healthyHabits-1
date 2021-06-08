@@ -97,7 +97,7 @@ app.get("/active/:city", (req, res) => {
 });
 
 // end active search section
-
+app.use(routes);
 app.use(session(sess));
 
 app.use(express.json());
@@ -112,8 +112,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-
-app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`listening on ${PORT}`));
