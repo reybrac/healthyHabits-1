@@ -1,5 +1,12 @@
 const router = require("express").Router();
-const { User, Sleeping, Eating, Spending, Exercise } = require("../models");
+const {
+  User,
+  Sleeping,
+  Eating,
+  Spending,
+  Exercise,
+  Active,
+} = require("../models");
 const withAuth = require("../utils/auth");
 router.get("/", async (req, res) => {
   console.log(req);
@@ -24,6 +31,7 @@ router.get("/profile", withAuth, async (req, res) => {
         { model: Eating },
         { model: Spending },
         { model: Exercise },
+        { model: Active },
       ],
     });
 

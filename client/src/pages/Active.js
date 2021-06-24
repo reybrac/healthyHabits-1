@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { APIS } from "googleapis/build/src/apis";
 
 class SearchResultContainer extends Component {
   state = {
@@ -10,8 +11,19 @@ class SearchResultContainer extends Component {
     sortAsc: false,
   };
 
+  saveActive = (name, image, organization, city, state) => {
+    APIS.saveActive({
+      name: name,
+      image: image,
+      organization: organization,
+      city: city,
+      state: state,
+    });
+  };
+
   generateActive = async () => {
-    await axios.get("/active/" + (this.state.search))
+    await axios
+      .get("/active/" + this.state.search)
       .then((data1) => {
         if (data1.data.data.results.length > 0) {
           console.log("data1: ", data1.data.data.results);
@@ -60,9 +72,9 @@ class SearchResultContainer extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form className="row">
           <div className="form-group">
-            <label htmlFor="search">Search:</label>
+            <label htmlFor="search">City:</label>
             <input
               onChange={this.handleInputChange}
               value={this.state.search}
@@ -102,6 +114,7 @@ class SearchResultContainer extends Component {
               <th>Registration status</th>
               <th>City</th>
               <th>State</th>
+              <th>Save Event</th>
             </tr>
           </thead>
           <tbody>
@@ -129,6 +142,24 @@ class SearchResultContainer extends Component {
                 <td>{result.salesStatus}</td>
                 <td>{result.place.cityName}</td>
                 <td>{result.place.stateProvinceCode}</td>
+                <td>
+                  <button
+                    className="btn btn-primary m-1"
+                    onClick={(e) => {
+                      saveActive(
+                        result.assetName,
+                        result.logoUrlAdr,
+                        result.organization.organizationName,
+                        result.place.cityName,
+                        result.place.stateProvinceCode
+                      );
+                      e.target.setAttribute("disabled", "true");
+                      e.target.textContent = "Saved!";
+                    }}
+                  >
+                    Save
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>

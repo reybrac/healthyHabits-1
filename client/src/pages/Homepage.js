@@ -283,13 +283,13 @@ function Homepage() {
 
         <img
           className="ml-3"
-          src="/images/FoodCalories.png"
+          src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/FoodCalories.png?raw=true"
           alt="junk food"
           style={{ height: "200px", widht: "200px" }}
         />
         <img
           className="ml-3"
-          src="/images/GRAPH1.jpg"
+          src="https://github.com/dorrianweber/healthyHabits/blob/main/client/public/images/Graph1.JPG?raw=true"
           alt="Eating graph"
           style={{ height: "200px", widht: "200px" }}
         />
